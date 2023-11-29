@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+}
+
+/* ---- Header Sekcija ---- */
+
+.banner-logo {
+    background-color: #1b1a16;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    user-drag: none;
+
+
+}
+
+.banner-logo img {
+    width: 50%;
+    height: auto;
+}
+
+nav  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    padding: 10px 20px 10px 20px;
+}
+
+
+/* ---- Sekcija Uvod ---- */
+
+.uvod {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.uvod h2 {
+    position: relative;
+    font-size: 3.5em;
+}
+
+.uvod img {
+    width: 30%;
+    height: auto;
+}
+
+
+
+/* ---- O Nama Sekcija  ---- */
+
+.o-nama-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+
+/* ---- Sekcija Kontakt ---- */
+
+#karta {
+    background-color: #1b1a16;
+    display: flex; 
+    justify-content: center; 
+    padding: 50px;
+    
+}
+
+
+#karta iframe{
+        border: 0px;
+        border-radius: 25px;
+        
+        width: 80%; 
+        height: 500px; filter: 
+        invert(90%);
+      
+      
+}
