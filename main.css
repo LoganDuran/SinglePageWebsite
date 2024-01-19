@@ -7,6 +7,131 @@
 
 }
 
+:root {
+    --primary:#25af5b;
+
+    --green1: #073B3A;
+    --green2: #0B6E4F;
+    --green3: #08A045;
+    --green4: #6BBF59;
+    --green5: #21D375;
+
+
+    --dark: #60a1cf;
+    --black: #0d1117;
+    --gray: #30363d;
+    --light: white;
+
+
+    --globalfont: 'hobo_stdmedium';
+
+
+    --blur: blur(20px);
+    --shadow: 0 0 30px var(--primary);
+
+    --radius: 1.0rem;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: var(--globalfont);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+    color: var(--light);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 120px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.pink {
+    display: flex;
+    justify-content: flex-start;
+    height: 600px;
+    background: #25A18E;
+    /* overflow: hidden; */
+  }
+
+
+
+
+
+  /* SVG background image via https://haikei.app/ */
+
+  .spacer {
+    aspect-ratio: 960/250;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .layer1 {
+    background-image: url('./layer1.svg');
+  }
+  .layer2 {
+    background-image: url('img/layer2.svg');
+  }
+
+  .flip {
+    margin-top: -5%;
+    transform: rotate(180deg);
+  }
+
+  /* Blobs SVG background image via https://haikei.app/ */
+
+  .blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+  }
+
+  #blob1 {
+    box-shadow:  0 0 30px var(--primary);
+  }
+
+  .blob-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .blobs {
+    width: 100%;
+    background: url('./blobs.svg') no-repeat bottom / cover;
+  }
 
 
 
@@ -18,18 +143,34 @@
 
 
 .chapter {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 10px; */
 }
 
 
 #section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     scroll-margin-top: 150px;
     width: 100%;
-    height: 100dvh;
-    height: 100vh;
-    background-color: aqua;
+    height: 90vh;
+    background-color: #004e64;
+}
+
+.logoimg {
+    width: 7.5rem;
+    height: auto;
+    border-radius: 100%;
+    /* box-shadow:  0 0 30px var(--primary);
+    background-color: var(--primary);
+    filter: blur(5px); */
+
+
+
 }
 
 
@@ -38,34 +179,64 @@
     width: 100%;
     height: 100dvh;
     height: 100vh;
-    background-color: blueviolet;   
+    /* background-color: blueviolet;    */
 }
 
 
 #section3 {
     scroll-margin-top: 80px;
     width: 100%;
+    min-height: 100dvh;
     height: 100dvh;
     height: 100vh;
-    background-color: crimson;
+    /* background-color: crimson; */
 }
+
+#section4 {
+    scroll-margin-top: 80px;
+    width: 100%;
+    height: 100dvh;
+    height: 100vh;
+    /* background-color: chartreuse; */
+    background-color: transparent;
+}
+
 
 .map {
     display: flex;
     justify-content: center;
+    
   
   }
   
   .map iframe{
     border: 0px;
-    border-radius: 25px;
+    border-top-left-radius: 350px;
+    border-bottom-right-radius: 350px;
     display: flex; 
     justify-content: center; 
-    width: 80%; 
-    height: 500px; filter: 
-    invert(90%);
+    width: 50%; 
+    height: 500px;
+    filter: invert(90%);
+    /* box-shadow:  0 0 30px var(--primary); */
+
   
   }
+
+
+
+footer {
+    display: flex;
+    background: url(img/bg\ obrisi.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+    width: 100%;
+    height: 500px;
+    filter: blur(5px);
+
+}
+
   
   @media only screen and (max-width:1024px) {
     .map iframe {
@@ -83,11 +254,4 @@
   
 
 
-#section4 {
-    scroll-margin-top: 80px;
-    width: 100%;
-    height: 100dvh;
-    height: 100vh;
-    background-color: chartreuse;
-}
 
