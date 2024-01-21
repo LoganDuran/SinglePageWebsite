@@ -157,7 +157,7 @@ ul{
     flex-wrap: nowrap;
     scroll-margin-top: 150px;
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     background-color: #004e64;
 }
 
@@ -197,8 +197,7 @@ ul{
     width: 100%;
     height: 100dvh;
     height: 100vh;
-    /* background-color: chartreuse; */
-    background-color: transparent;
+    background-color: #004E64;
 }
 
 
@@ -228,13 +227,8 @@ ul{
 
 footer {
     display: flex;
-    background: url(img/bg\ obrisi.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% auto;
     width: 100%;
     height: 500px;
-    filter: blur(5px);
 
 }
 
