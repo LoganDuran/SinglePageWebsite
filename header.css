@@ -6,7 +6,7 @@
     /* border-bottom: 1px solid var(--primary) ; */
     /* backdrop-filter: var(--blur); */
     /* box-shadow: var(--shadow); */
-    background-color: #004e64;
+    background-color: transparent;
     position: absolute;
     top: 0;
     left: 0;
