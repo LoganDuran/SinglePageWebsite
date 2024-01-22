@@ -16,6 +16,12 @@
     --green4: #6BBF59;
     --green5: #21D375;
 
+    --purple1: #9C89FF;
+    --purple2: #7E38B7;
+    --purple3: #541675;
+    --purple4: #4f3147;
+    --purple5: ;
+
 
     --dark: #60a1cf;
     --black: #0d1117;
@@ -102,6 +108,14 @@ ul{
   .layer2 {
     background-image: url('img/layer2.svg');
   }
+  .layer4 {
+    background-image: url('img/layer4.svg');
+  }
+  .layer5 {
+    background-image: url('img/layer5.svg');
+  }
+
+
 
   .flip {
     margin-top: -8%;
@@ -197,7 +211,7 @@ ul{
     width: 100%;
     height: 100dvh;
     height: 100vh;
-    background-color: #004E64;
+    background-color: #4f3147;
 }
 
 
