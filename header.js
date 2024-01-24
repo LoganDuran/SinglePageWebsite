@@ -3,25 +3,19 @@
 const hamburgerMenu = document.querySelector(".hamMenu");
 const nav = document.querySelector(".nav");
 const header = document.querySelector(".header");
-const navLinks = document.querySelector(".navlinks");
+const navLinks = document.querySelectorAll(".navlinks");
 
 
-hamburgerMenu.addEventListener("click", () => {
-    hamburgerMenu.classList.toggle("active")
-});
+hamburgerMenu.addEventListener("click", function () {
+        [header, nav, hamburgerMenu].forEach(section => section.classList.toggle("active"));
+    });
 
-hamburgerMenu.addEventListener("click", () => {
-    nav.classList.toggle("active")
-});
 
-hamburgerMenu.addEventListener("click", () => {
-    header.classList.toggle("active")
-});
+navLinks.forEach(function (navLink) {
+        return navLink.addEventListener("click", closeManu)
+    });
 
-// navLinks.addEventListener("click", () => {
-//     hamburgerMenu.classList.remove("active")
-// });
-
-// navLinks.addEventListener("click", () => {
-//     nav.classList.remove("active")
-// });
+   
+function closeManu() {
+        [header, nav, hamburgerMenu].forEach(segment => segment.classList.remove("active"));
+    };
