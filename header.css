@@ -6,7 +6,7 @@
     /* border-bottom: 1px solid var(--primary) ; */
     /* backdrop-filter: var(--blur); */
     /* box-shadow: var(--shadow); */
-    background-color: transparent;
+    background-color: #004E64;
     position: absolute;
     top: 0;
     left: 0;
@@ -200,7 +200,7 @@ nav{
         background: transparent;
         color: var(--light);
         backdrop-filter: blur(20px) grayscale(40%);
-        box-shadow: var(--shadow);
+        /* box-shadow: var(--shadow); */
         z-index: 1;
     }
 
@@ -209,6 +209,11 @@ nav{
         align-items: flex-start;
         margin: 30px; 
         
+    }
+
+
+    .logo{
+        font-size: 3rem;
     }
 
 

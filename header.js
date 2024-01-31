@@ -7,7 +7,9 @@ const navLinks = document.querySelectorAll(".navlinks");
 
 
 hamburgerMenu.addEventListener("click", function () {
-        [header, nav, hamburgerMenu].forEach(section => section.classList.toggle("active"));
+        [header, nav, hamburgerMenu].forEach(function (section) {
+                return section.classList.toggle("active");
+            });
     });
 
 

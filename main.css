@@ -14,13 +14,21 @@
     --green2: #0B6E4F;
     --green3: #08A045;
     --green4: #6BBF59;
-    --green5: #21D375;
+    --green5: #21D375; 
+
+    --green6: #7AE582;
 
     --purple1: #9C89FF;
     --purple2: #7E38B7;
     --purple3: #541675;
     --purple4: #4f3147;
-    --purple5: ;
+
+    --gray1: #4D4D4D;
+    --gray2: #3F3F3F;
+    --gray3: #343434;
+    --gray4: #262626;
+    --gray5: #191919;
+    
 
 
     --dark: #60a1cf;
@@ -193,25 +201,23 @@ ul{
     width: 100%;
     height: 100dvh;
     height: 100vh;
-    background-color: #9FFFCB; 
+    background-color: #4D4D4D; 
 }
 
 
 #section3 {
     scroll-margin-top: 80px;
     width: 100%;
-    min-height: 100dvh;
-    height: 100dvh;
-    height: 100vh;
+    min-height: 300px;
+
     /* background-color: crimson; */
 }
 
 #section4 {
     scroll-margin-top: 80px;
     width: 100%;
-    height: 100dvh;
-    height: 100vh;
-    background-color: #4f3147;
+    min-height: 300px;
+    background-color: #191919;
 }
 
 
@@ -246,6 +252,15 @@ footer {
 
 }
 
+
+
+/* ---- Responsivenes ---- */
+
+@media (max-width: 880px) {
+
+
+  
+}
   
   @media only screen and (max-width:1024px) {
     .map iframe {
