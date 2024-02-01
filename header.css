@@ -176,7 +176,7 @@ nav{
 
         align-items: center;
         text-align: center;
-        background-color: transparent;
+        /* background-color: transparent; */
         color: var(--light);
 
         transition: all 0.15s ease-in-out;
