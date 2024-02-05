@@ -3,11 +3,13 @@
 
 /* --- Header Section --- */
 .header {
-    /* background-color: var(--gray4); */
-    position: absolute;
+    background-color: var(--gray4);
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 600px;
+    height: 90vh;
     padding: 20px 60px;
     display: flex;
     flex-direction: column;
