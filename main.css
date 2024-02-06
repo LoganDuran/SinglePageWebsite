@@ -11,7 +11,7 @@
     --primary:#25af5b;
 
     /* --primary:#25A18E; */
-    --secondary:#25af5b;
+    --secondary:#164F63;
 
 
     --green1: #073B3A;
@@ -153,6 +153,20 @@ p {
     width: 100%;
     min-height: 600px;
     background-color: var(--gray1);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+
+.about img {
+  height: auto;
+  width: 300px;
 }
 
 .logoimg {
