@@ -3,7 +3,7 @@
 
 /* --- Header Section --- */
 .header {
-    background-color: var(--secondary);
+    background-color: var(--gray5); 
     /* position: absolute; */
     top: 0;
     left: 0;
