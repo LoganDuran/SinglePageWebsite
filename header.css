@@ -5,6 +5,11 @@
 .header {
     background-color: var(--gray5); 
     /* position: absolute; */
+    /* background-image: url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: ; */
+
     top: 0;
     left: 0;
     width: 100%;
