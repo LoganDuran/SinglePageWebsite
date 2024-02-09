@@ -8,7 +8,15 @@
 }
 
 :root {
-    --primary:#91BD38;
+    --primary:rgb(112, 160, 53);
+
+    /* --primary:rgb(192, 208, 53); */
+
+
+    /* --primary:rgb(154, 187, 56); */
+
+
+    /* --primary:#91BD38; */
 
     --lightbackground:#C2A990;
 
