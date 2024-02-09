@@ -18,16 +18,16 @@
 
   <header class="header">
     <div>
-    <a href="#" class="logo">Be<span></span>Like<span>Now</span></a>
+    <a draggable="false" href="#" class="logo">Be<span></span>Like<span>Now</span></a>
     <h1 class="chapter heading">Piercing & Tattoo  <br> Shop</h1>
     </div>
-    <img class="logoimg" src="img/Pumpkin-logo-final--5.png" alt="">
+    <img class="logoimg" src="img/Pumpkin-logo-final--5.png" draggable="false" alt="">
     <nav class="nav">
       <ul class="navlist">
-        <li><a class="navlinks" href="#section1">About</a></li>
-        <li><a class="navlinks" href="#section2">Services</a></li>
-        <li><a class="navlinks" href="#section3">Gallery</a></li>
-        <li><a class="navlinks" href="#section4">Contact</a></li>
+        <li><a draggable="false" class="navlinks" href="#section1">About</a></li>
+        <li><a draggable="false" class="navlinks" href="#section2">Services</a></li>
+        <li><a draggable="false" class="navlinks" href="#section3">Gallery</a></li>
+        <li><a draggable="false" class="navlinks" href="#section4">Contact</a></li>
       </ul>
     </nav>
     <div class="hamMenu">
@@ -88,12 +88,12 @@
       <h2 class="chapter">Gallery</h2>
 
       <div class="gallery-content">
-        <img src="img/slike (1).jpg" alt="" class="slika">
-        <img src="img/slike (2).jpg" alt="" class="slika">
-        <img src="img/slike (5).jpg" alt="" class="slika">
-        <img src="img/slike (4).jpg" alt="" class="slika">
-        <img src="img/slike (3).jpg" alt="" class="slika">
-        <img src="img/slike (7).jpg" alt="" class="slika">
+        <img src="img/slike (1).jpg" alt="" class="image">
+        <img src="img/slike (2).jpg" alt="" class="image">
+        <img src="img/slike (5).jpg" alt="" class="image">
+        <img src="img/slike (4).jpg" alt="" class="image">
+        <img src="img/slike (3).jpg" alt="" class="image">
+        <img src="img/slike (7).jpg" alt="" class="image">
       </div>
 
     </div>
@@ -104,31 +104,33 @@
       <div id="section4">
         <div class="contact">
         <h2 class="chapter">Contact</h2>
-
+            <div class="wrapper">
               <div class="map"><iframe
                 style="border:0"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.401428881207!2d20.474474142432292!3d44.79300707121488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7071c1a75979%3A0x8efa1103644559dc!2sBe%20Like%20Now!5e0!3m2!1sen!2srs!4v1700225653782!5m2!1sen!2srs">
                 </iframe>
-           </div>
+              </div>
              <div class="contact-cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card"><a draggable="false" href="#"><iconify-icon icon="ri:facebook-fill" width="5em" height="5em"></iconify-icon></a></div>
+                <div class="card"><a draggable="false" href="#"><iconify-icon icon="lucide:instagram" width="5em" height="5em"></iconify-icon></a></div>
+                <div class="card"><a draggable="false" href="#"><iconify-icon icon="line-md:phone-call-loop" width="5em" height="5em"></iconify-icon></a></div>
              </div>
+          </div>
          </div>
       </div>
 
-    <div class="spacer layer5"></div>
+    <div class="spacer footerspacer"></div>
     <footer>
       <div class="socials">
-        <p> <a href="#" class="logo-bottom">Be<span></span>Like<span>Now</span></a> &copy; <script>document.write(new Date().getFullYear())</script> </p>
+        <p> <a draggable="false" href="#" class="logo-bottom">Be<span></span>Like<span>Now</span></a> &copy; <script>document.write(new Date().getFullYear())</script> </p>
 
       </div>
     </footer>
 
   </main>
   <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="header.js"></script>
   <script src="main.js"></script>
 </body>
