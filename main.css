@@ -348,8 +348,6 @@ footer .logo-bottom span {
   .wrapper {
     width: 85%;
     flex-direction: column;
-    gap: 1rem;
-
   }
    
   .map {
@@ -359,7 +357,6 @@ footer .logo-bottom span {
 
   .contact-cards {
     flex-direction: row;
-    gap: 1rem;
   }
 
   .card {
