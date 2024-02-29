@@ -1,16 +1,15 @@
 @font-face {
-    font-family: 'hobo_stdmedium';
-    src: url('inc/fonts/hobo-std-font-webfont.woff2') format('woff2'),
-         url('inc/fonts/hobo-std-font-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "hobo_stdmedium";
+  src: url("inc/fonts/hobo-std-font-webfont.woff2") format("woff2"),
+    url("inc/fonts/hobo-std-font-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-  --primary:rgb(112, 165, 53);
+  --primary: rgb(112, 165, 53);
 
-  --lightbackground:#C2A990;
+  --lightbackground: #c2a990;
 
   --darkbackground: #191919;
 
@@ -18,21 +17,17 @@
 
   --light: white;
 
-
-  --globalfont: 'hobo_stdmedium';
+  --globalfont: "hobo_stdmedium";
   --paragraphfont: cursive;
-
 
   --blur: blur(20px);
   --shadow: -10px 10px 5px var(--darkbackground);
   --shadowblack: -10px 10px 5px var(--black);
-
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 * {
   margin: 0;
@@ -58,17 +53,14 @@ main {
   width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--light);
-
 }
 
-ul{
+ul {
   list-style: none;
 }
-
-
 
 /* --- Spacer Section --- */
 
@@ -81,25 +73,22 @@ ul{
 }
 
 .spacer-section {
-  background-image: url('img/webspacer.svg');
+  background-image: url("img/webspacer.svg");
 }
 .footerspacer {
-  background-image: url('img/footerspacer.svg');
+  background-image: url("img/footerspacer.svg");
 }
 
 .flip {
   transform: rotate(180deg);
 }
 
-
-
-
-
-
 /* ---- Main Content ---- */
 
-
-#section1, #section2, #section3, #section4{
+#section1,
+#section2,
+#section3,
+#section4 {
   margin-top: -3px;
 }
 
@@ -110,14 +99,13 @@ ul{
   padding: 15px;
 }
 
-
 #section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: var(--lightbackground); 
+  background-color: var(--lightbackground);
 }
 
 .about {
@@ -129,9 +117,8 @@ ul{
 
 .column {
   display: flex;
-  width: 70%;    
+  width: 70%;
 }
-
 
 .column img {
   width: 50%;
@@ -151,15 +138,13 @@ ul{
 
 .column.two {
   display: flex;
-  flex-direction: row-reverse
+  flex-direction: row-reverse;
 }
-
 
 .logoimg {
-   width: 300px;
-   height: auto;
+  width: 300px;
+  height: auto;
 }
-
 
 #section2 {
   display: flex;
@@ -168,7 +153,7 @@ ul{
   flex-wrap: nowrap;
   width: 100%;
   padding: 30px 0;
-  background-color: var(--darkbackground); 
+  background-color: var(--darkbackground);
 }
 
 #section2 .column p {
@@ -178,11 +163,7 @@ ul{
 
 #section2 .column img {
   box-shadow: var(--shadowblack);
-
 }
-
-
-
 
 #section3 {
   display: flex;
@@ -191,8 +172,7 @@ ul{
   width: 100%;
   height: auto;
   padding: 30px 0 50px 0;
-  background-color: var(--lightbackground); 
-  
+  background-color: var(--lightbackground);
 }
 
 .gallery-content {
@@ -207,22 +187,17 @@ ul{
   padding-bottom: 30px;
   gap: 3rem;
   margin-top: 30px;
-
-
-
 }
 
 .image {
   width: 350px;
   height: auto;
   aspect-ratio: 1/1;
+  aspect-ratio: 5/6;
   object-fit: cover;
   /* margin: 30px; */
   box-shadow: var(--shadow);
-
-
 }
-
 
 #section4 {
   width: 100%;
@@ -237,7 +212,6 @@ ul{
   flex-direction: column;
   align-items: center;
   width: 100%;
-
 }
 
 .wrapper {
@@ -247,8 +221,6 @@ ul{
   justify-content: center;
   gap: 2rem;
   margin: 30px 0 50px 0;
-
-
 }
 
 .map {
@@ -257,15 +229,13 @@ ul{
   box-shadow: var(--shadowblack);
 }
 
-
-.map iframe{
-  border: none !important; 
+.map iframe {
+  border: none !important;
   filter: invert(90%);
   user-select: none;
   width: 100%;
   height: 100%;
 }
-
 
 .contact-cards {
   display: flex;
@@ -281,17 +251,15 @@ ul{
   backdrop-filter: brightness(120%);
   color: var(--light);
   aspect-ratio: 1/1;
-  height:100%;
+  height: 100%;
   width: min-content;
-  transition: .5s;
-
+  transition: 0.5s;
 }
 
 .card:hover {
   /* backdrop-filter: brightness(110.1%); */
   box-shadow: none;
 }
-
 
 footer {
   width: 100%;
@@ -301,26 +269,21 @@ footer {
   padding: 20px;
   user-select: none;
   font-size: 1.1rem;
-
 }
 
 footer .logo-bottom {
-  color:  var(--light);
+  color: var(--light);
   cursor: pointer;
 }
 
 footer .logo-bottom span {
-  color:  var(--primary);
+  color: var(--primary);
   margin-left: 3px;
 }
-
-
 
 /* ---- Responsivenes ---- */
 
 @media (max-width: 1024px) {
-
-
   .column {
     flex-direction: column;
     align-items: center;
@@ -339,22 +302,19 @@ footer .logo-bottom span {
 
   .image {
     width: 85%;
-
   }
 
   .column p {
     width: 85%;
-
   }
 
   .wrapper {
     width: 85%;
     flex-direction: column;
   }
-   
+
   .map {
     height: 350px;
-
   }
 
   .contact-cards {
@@ -365,6 +325,4 @@ footer .logo-bottom span {
     width: 100%;
     height: min-content;
   }
-  
-
 }
