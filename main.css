@@ -70,6 +70,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: transparent;
 }
 
 .spacer-section {
@@ -85,12 +86,12 @@ ul {
 
 /* ---- Main Content ---- */
 
-#section1,
-#section2,
-#section3,
-#section4 {
+/* #about,
+#services,
+#gallery,
+#contact {
   margin-top: -3px;
-}
+} */
 
 .chapter {
   text-align: center;
@@ -99,25 +100,60 @@ ul {
   padding: 15px;
 }
 
-#section1 {
+#about {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: var(--lightbackground);
+  min-height: 100vh;
+  background: url(img/bglight.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
-.about {
+.bgsection {
+  /* background-image: linear-gradient(
+    193deg,
+    rgb(82, 80, 75, 0.2) 5%,
+    rgb(82, 80, 75, 0.2) 15%,
+    rgb(54, 53, 50, 0.2) 25%,
+    rgb(25, 25, 25, 0.2) 35%,
+    rgb(25, 25, 25, 0.2) 55%,
+    rgb(25, 25, 25, 0.2) 85%,
+    rgb(25, 25, 25, 0.2)
+  ); */
+
+  /* background: rgb(194, 169, 144, 0.2); */
+  /* background: rgb(25, 25, 25, 0.2); */
+  backdrop-filter: saturate(10%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
+  min-height: 100vh;
 }
 
 .column {
   display: flex;
   width: 70%;
+}
+
+.column-fixed {
+  display: block;
+  position: fixed;
+  top: 50px;
+  z-index: -1;
 }
 
 .column img {
@@ -130,10 +166,22 @@ ul {
 }
 
 .column p {
-  margin: 30px;
+  /* margin: 30px;
   backdrop-filter: brightness(75%);
-  box-shadow: var(--shadow);
-  padding: 30px;
+  box-shadow: var(--shadow); */
+  padding: 10px 20px;
+}
+
+.bgframe {
+  border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: var(--light);
+  color: #191919;
 }
 
 .column.two {
@@ -146,7 +194,7 @@ ul {
   height: auto;
 }
 
-#section2 {
+#services {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,23 +204,26 @@ ul {
   background-color: var(--darkbackground);
 }
 
-#section2 .column p {
+#services .column p {
   backdrop-filter: brightness(120%);
   box-shadow: var(--shadowblack);
 }
 
-#section2 .column img {
+#services .column img {
   box-shadow: var(--shadowblack);
 }
 
-#section3 {
+#gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 30px 0 50px 0;
-  background-color: var(--lightbackground);
+  background: url(img/bglight.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-position: center; */
 }
 
 .gallery-content {
@@ -187,26 +238,75 @@ ul {
   padding-bottom: 30px;
   gap: 3rem;
   margin-top: 30px;
+  padding: 30px 0 50px 0;
 }
 
 .image {
-  width: 350px;
+  /* width: 350px;
   height: auto;
   aspect-ratio: 1/1;
   aspect-ratio: 5/6;
   object-fit: cover;
-  /* margin: 30px; */
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow); */
+
+  border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-#section4 {
+/* experimental - section */
+
+.frame {
+  background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 10vh 10vw;
+  height: 80vh;
+  padding: 8vmin;
+  position: relative;
+  text-align: center;
+}
+.frame:before {
+  border-radius: 2px;
+  bottom: -2vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+  content: "";
+  left: -2vmin;
+  position: absolute;
+  right: -2vmin;
+  top: -2vmin;
+}
+.frame:after {
+  border-radius: 2px;
+  bottom: -2.5vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  content: "";
+  left: -2.5vmin;
+  position: absolute;
+  right: -2.5vmin;
+  top: -2.5vmin;
+}
+
+#contact {
   width: 100%;
   min-height: 600px;
   background-color: var(--darkbackground);
   padding: 30px 0 90px 0;
 }
 
-.contact {
+.contact-content {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -214,7 +314,7 @@ ul {
   width: 100%;
 }
 
-.wrapper {
+.contact-content .wrapper {
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -308,7 +408,7 @@ footer .logo-bottom span {
     width: 85%;
   }
 
-  .wrapper {
+  #contact .wrapper {
     width: 85%;
     flex-direction: column;
   }
