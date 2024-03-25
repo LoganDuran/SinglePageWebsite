@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+
 @font-face {
   font-family: "hobo_stdmedium";
   src: url("inc/fonts/hobo-std-font-webfont.woff2") format("woff2"),
@@ -62,6 +64,15 @@ ul {
   list-style: none;
 }
 
+p {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.9rem;
+  padding: 15px;
+}
+
 /* --- Spacer Section --- */
 
 .spacer {
@@ -119,29 +130,27 @@ ul {
   flex-wrap: nowrap;
   width: 100%;
   min-height: 120vh;
-  background: url(img/bglight.jpg);
+  /* background: url(img/bglight.jpg); */
+  /* background: url(img/bgwhite.jpg); */
+  background: url(img/bggreen.jpg);
+  /* background: url(img/bgpumpkin.jpg); */
+  /* background: url(img/bgcar.jpg); */
+  /* background: url(img/bgfull.jpg); */
+  /* background: url(img/bgtraktor.jpg); */
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position: 50% 85%;
   z-index: -1;
 }
 
-.bgsection {
-  /* background-image: linear-gradient(
-    193deg,
-    rgb(82, 80, 75, 0.2) 5%,
-    rgb(82, 80, 75, 0.2) 15%,
-    rgb(54, 53, 50, 0.2) 25%,
-    rgb(25, 25, 25, 0.2) 35%,
-    rgb(25, 25, 25, 0.2) 55%,
-    rgb(25, 25, 25, 0.2) 85%,
-    rgb(25, 25, 25, 0.2)
-  ); */
-
-  /* background: rgb(194, 169, 144, 0.2); */
-  /* background: rgb(25, 25, 25, 0.2); */
+.bgfilter {
+  background: rgb(25, 25, 25, 0.2);
   /* backdrop-filter: saturate(10%); */
+  backdrop-filter: blur(3px);
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -164,16 +173,14 @@ ul {
   top: 80px;
   z-index: -1;
   max-width: 600px;
-  /* height: 500px; */
   margin: 30px;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   padding: 30px;
-  /* backdrop-filter: brightness(110%); */
-  /* backdrop-filter: blur(10px); */
 
-  background: rgb(194, 169, 144, 0.9);
-  /* background: rgb(255, 255, 255, 0.4); */
-  color: var(--darkbackground);
+  /* background: rgba(106, 96, 93); */
+
+  color: var(--light);
+
   text-align: center;
 }
 
@@ -185,11 +192,6 @@ ul {
   margin-left: 3px;
 }
 
-.frame-content p {
-  font-size: 0.9rem;
-  padding: 15px;
-}
-
 /* --- Services Section --- */
 
 #services {
@@ -198,39 +200,77 @@ ul {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  padding: 30px 0;
-  background-color: var(--darkbackground);
   z-index: 1;
+  gap: 2rem;
+  min-height: 100vh;
+  height: 100%;
+  background: url(img/bgblack.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#services .bgfilter {
+  background: linear-gradient(
+    180deg,
+    rgb(25, 25, 25, 1),
+    rgb(25, 25, 25, 0.5),
+    rgb(25, 25, 25, 0),
+    rgb(25, 25, 25, 0),
+    rgb(25, 25, 25, 0),
+    rgb(25, 25, 25, 0),
+    rgb(25, 25, 25, 0.5),
+    rgb(25, 25, 25, 1)
+  );
+  backdrop-filter: blur(3px);
+
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 70%;
+  height: 100%;
   gap: 2rem;
 }
 
-#services .column p {
-  backdrop-filter: brightness(120%);
-  box-shadow: var(--shadowblack);
-  padding: 30px;
+#services .img-content {
+  display: flex;
+  justify-content: center;
+
+  gap: 2rem;
 }
 
-#services .column img {
+#services .img-content img {
   box-shadow: var(--shadowblack);
 }
 
 .column {
-  display: flex;
-  width: 70%;
-  gap: 2rem;
 }
 
 .column img {
-  width: 50%;
+  width: 30%;
   height: auto;
-  aspect-ratio: 3/2;
+  /* aspect-ratio: 3/2; */
   object-fit: cover;
   box-shadow: var(--shadow);
 }
 
-.column.two {
-  display: flex;
-  flex-direction: row-reverse;
+.column-content {
+  box-shadow: var(--shadowblack);
+  box-shadow: var(--shadowblack);
+  background-color: var(--darkbackground);
+  width: 65%;
 }
 
 /* --- Gallery Section --- */
@@ -242,11 +282,15 @@ ul {
   align-items: center;
   width: 100%;
   min-height: 120vh;
-  background: url(img/bglight.jpg);
+  /* background: url(img/bglight.jpg); */
+  background: url(img/bgwhite.jpg);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: top;
+  /* background-position: top; */
+  background-position: bottom;
+
   z-index: -1;
 }
 
