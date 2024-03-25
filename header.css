@@ -45,6 +45,13 @@
   height: auto;
 }
 
+.heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -209,7 +216,7 @@ nav {
     font-size: 3.3rem;
   }
 
-  .chapter.heading {
+  .heading {
     font-size: 1.8rem;
   }
 }
