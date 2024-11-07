@@ -2,13 +2,8 @@
 .header {
   background-image: linear-gradient(
     193deg,
-    #52504b,
-    #52504b,
-    #363532,
-    var(--darkbackground),
-    var(--darkbackground),
-    var(--darkbackground),
-    var(--darkbackground)
+    #52504b 18%,
+    var(--darkbackground) 50%
   );
   top: 0;
   left: 0;

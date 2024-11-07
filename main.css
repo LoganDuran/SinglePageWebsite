@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
-
 @font-face {
   font-family: "hobo_stdmedium";
   src: url("inc/fonts/hobo-std-font-webfont.woff2") format("woff2"),
@@ -8,7 +6,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Hobeaux";
+  src: url("inc/fonts/Hobeaux-Regular.woff2") format("woff2"),
+    url("inc/fonts/Hobeaux-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
+  color-scheme: dark;
+
   --primary: rgb(112, 165, 53);
 
   --lightbackground: #c2a990;
@@ -65,11 +74,10 @@ ul {
 }
 
 p {
-  font-family: "Playpen Sans", cursive;
+  font-family: "Hobeaux", cursive;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 15px;
 }
 
@@ -131,6 +139,7 @@ p {
   width: 100%;
   min-height: 120dvh;
   background: url(img/bgwhite.webp);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -424,16 +433,11 @@ footer .logo-bottom span {
   }
 
   .image {
-    max-width: none;
     width: 85%;
   }
 
   #gallery {
     scroll-margin-top: -40px;
-  }
-
-  .gallery-content {
-    flex-direction: column;
   }
 
   #contact .wrapper {
