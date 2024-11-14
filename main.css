@@ -7,24 +7,6 @@
 }
 
 @font-face {
-  font-family: "Nunito";
-  src: url("inc/fonts/Nunito-Regular.woff2") format("woff2"),
-    url("inc/fonts/Nunito-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nunito";
-  src: url("inc/fonts/Nunito-Italic.woff2") format("woff2"),
-    url("inc/fonts/Nunito-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Sour Gummy";
   src: url("inc/fonts/SourGummy-Italic.woff2") format("woff2"),
     url("inc/fonts/SourGummy-Italic.woff") format("woff");
